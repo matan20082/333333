@@ -72,6 +72,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
 
         tt=getIntent();
         setBackgroundColor(tt.getStringExtra("ggg"));
+        //
 
 
 
