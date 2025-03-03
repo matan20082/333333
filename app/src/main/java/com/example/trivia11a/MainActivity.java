@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     private FbModule fbModule;
     private ConstraintLayout ll;
 
-    private Intent xx;
+    private String xx;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,9 +47,10 @@ public class MainActivity extends AppCompatActivity {
                         {
                             Intent data = o.getData();
                             String str = data.getStringExtra("color");
+                            xx=str;
                             fbModule.writeBackgroundColorToFb(str);
-                            xx=new Intent();
-                            xx=xx.putExtra("ggg",str);
+
+
 
 
 
@@ -63,7 +64,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void onClickStart(View view) {
         Intent intent = new Intent(this, GameActivity.class);
+        intent.putExtra("ggg",xx);
         startActivity(intent);
+
     }
 
     public void onClickSetting(View view) {
