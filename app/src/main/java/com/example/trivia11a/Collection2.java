@@ -31,7 +31,7 @@ public class Collection2 {
 
         qq= arr.get(randomInt);
         arr.remove(qq);
-
+//
 
     }
 
