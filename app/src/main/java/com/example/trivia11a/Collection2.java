@@ -9,6 +9,8 @@ public class Collection2 {
 
     private Question qq;
 
+    private int num=0;
+
     public Collection2()
     {
         Question q1 = new Question("1+10","7", "11", "3","100", 2);
@@ -23,32 +25,33 @@ public class Collection2 {
         arr.add (q3);
         arr.add (q4);
         arr.add (q5);
+
     }
 
     public void initQuestions()
     {
-        int randomInt = (int) (Math.random() * 4);
-
-        qq= arr.get(randomInt);
-        arr.remove(qq);
-//
-
+        index = arr.size();
     }
 
     public Question getNextQuestion()
     {
         // הפעולה מחזירה הפניה לשאלה הבאה
-        Question q = qq;
-        return q;
+        int randomInt = (int) (Math.random() * index-1);
+
+        qq= arr.get(randomInt);
+        arr.remove(qq);
+        index--;
+        return qq;
     }
 
     public boolean isNotLastQuestion() {
         // הפעולה מחזירה אמת אם אנו בשאלה האחרונה
-        return (index < arr.size()); // if not at the end of the ArrayList
+        return  (index>0);
+        // if not at the end of the ArrayList
         // }
     }
 
     public int getIndex() {
-        return index;
+        return num++;
     }
 }

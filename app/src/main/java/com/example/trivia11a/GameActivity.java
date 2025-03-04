@@ -44,7 +44,12 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
 
+        tt=getIntent();
+ //
+
         ll = findViewById(R.id.activity_game);
+        String str = tt.getStringExtra("ggg");
+        setBackgroundColor(str);
 
 
         tvQuestion = findViewById(R.id.tvQuestion);
@@ -70,9 +75,6 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         nextQuestion();
 
 
-        tt=getIntent();
-        setBackgroundColor(tt.getStringExtra("ggg"));
-        //
 
 
 

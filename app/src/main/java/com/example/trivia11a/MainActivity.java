@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
     public void setNewColorFromFb(String str) {
         // הפיירבייס קורא לפעולה בפעם הראשונה
         // ואחרי כל פעם שהמשתמש משנה את הצבע
-
+        xx = str;
         setBackgroundColor(str);
     }
 

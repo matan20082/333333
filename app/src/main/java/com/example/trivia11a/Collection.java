@@ -5,6 +5,8 @@ import java.util.ArrayList;
 public class Collection {
 
     private ArrayList<Question> arr;
+
+    private int num=1;
     private int index; // מספר השאלה הבאה בתור
 
     public Collection()
@@ -43,6 +45,6 @@ public class Collection {
     }
 
     public int getIndex() {
-        return index;
+        return num++;
     }
 }
