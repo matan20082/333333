@@ -13,7 +13,6 @@ Button btn;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.instruction);
         btn=findViewById(R.id.btnn);
-//
         btn.setOnClickListener(this);
     }
 
