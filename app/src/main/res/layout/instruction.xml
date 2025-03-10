@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="שלום ברוכים הבאים למשחק הטריוויה הגדול בכל הזמנים"
+        android:textSize="30dp"
+        ></TextView>
+
+    <TextView
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="החוקים של המשחק קלילים ממש בכל פעם תופיע שאלה והמטרה שלך היא לענות עליה. איך בדיוק תענה עליה אתה בטח שואל אז ככה יופיעו מולך ארבע אופציות עם תשובות ותצטרך לבחור אחת ובכל פעם שתענה תשובה נכונה אז תקבל נקודה וזהו זה הכל!!!"
+        android:textSize="25dp"
+
+        ></TextView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="חזרה"
+        android:textSize="30dp"
+        android:id="@+id/btnn"
+        ></Button>
+
+
+</LinearLayout>

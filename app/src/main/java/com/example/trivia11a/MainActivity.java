@@ -75,6 +75,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClickInstruction(View view) {
+        Intent v = new Intent(this, InstructionActivity.class);
+        resultLauncher.launch(v);
     }
 
     public void setNewColorFromFb(String str) {

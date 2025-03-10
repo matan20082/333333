@@ -131,14 +131,16 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         tvPoints.setText("points: " + points);
         if(collection.isNotLastQuestion())
         {
-            tvQuestionNumber.setText("Question number: " + (collection.getIndex() + 1));
+            tvQuestionNumber.setText("Question number: " + (collection.getIndex() + 1+1));
         }
 
         nextQuestion();
     }
 
     public void reset() {
+
         this.points = 0;
+        collection.addd();
         collection.initQuestions();
         tvPoints.setText("Points: " + 0);
         tvQuestionNumber.setText("Question number: " + 1);
